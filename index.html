@@ -49,7 +49,117 @@
 								<p>✥ Hello Everyone ! This is Balamurugan.</p>
 								<p>✥ I'm an MBA Graduate Specialized in Business Analytics and SCM. Currently Pursuing Data Analytics Course at Besant Technologies, Chennai.</p>
 								<p>✥ I am an evolving data analyst with a strong passion for creative learning and problem-solving. I thrive on exploring innovative methods to analyze data and uncover insights, constantly seeking new opportunities to grow and expand my skill set in a dynamic environment.</p>
-							    <p>⎆ MY TOOLKIT</p>
+
+
+								/* Skills Section */
+	<style>							
+    .skills-section {
+      padding: 20px;
+      background-color: #1a1a1a;
+      color: #fff;
+      border-radius: 10px;
+      margin: 20px;
+    }
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .skill-item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .skill-progress {
+      background: #333;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+      height: 10px;
+    }
+    .progress-bar {
+      background: #4caf50;
+      height: 100%;
+      transition: width 0.5s ease-in-out;
+    }
+    .skill-percentage {
+      font-size: 14px;
+      text-align: right;
+      color: #aaa;
+    }
+  </style>
+
+
+								<!-- My Skills Section -->
+  <section id="my-skills" class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <!-- Skill Item -->
+      <div class="skill-item">
+        <h6>Figma</h6>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 95%;"></div>
+        </div>
+        <span class="skill-percentage">95%</span>
+      </div>
+      <!-- Skill Item -->
+      <div class="skill-item">
+        <h6>Adobe XD</h6>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 90%;"></div>
+        </div>
+        <span class="skill-percentage">90%</span>
+      </div>
+      <!-- Skill Item -->
+      <div class="skill-item">
+        <h6>Sketch</h6>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 70%;"></div>
+        </div>
+        <span class="skill-percentage">70%</span>
+      </div>
+      <!-- Skill Item -->
+      <div class="skill-item">
+        <h6>HTML & CSS</h6>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 85%;"></div>
+        </div>
+        <span class="skill-percentage">85%</span>
+      </div>
+      <!-- Skill Item -->
+      <div class="skill-item">
+        <h6>Bootstrap</h6>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 65%;"></div>
+        </div>
+        <span class="skill-percentage">65%</span>
+      </div>
+      <!-- Skill Item -->
+      <div class="skill-item">
+        <h6>Adobe Suite</h6>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 70%;"></div>
+        </div>
+        <span class="skill-percentage">70%</span>
+      </div>
+    </div>
+  </section>
+
+
+								<script>
+    // Optional: Animate progress bars when scrolling
+    window.addEventListener("load", () => {
+      const progressBars = document.querySelectorAll(".progress-bar");
+      progressBars.forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = "0%";
+        setTimeout(() => (bar.style.width = width), 500);
+      });
+    });
+  </script>
+								
+								
+								<p>⎆ MY TOOLKIT</p>
 								<p>✥ MySQL</p>
 								<p>✥ Advanced Excel</p>
 								<p>✥ Power BI</p>
@@ -57,146 +167,7 @@
 								<p>✥ Tableau</p>
 							</article>
 
-<!-- my skills -->
-              <div class="sec-box" data-scroll-index="0">
-                <div class="bg"></div>
 
-                <div class="content-box">
-                  <!-- ==================== Start Skills ==================== -->
-
-                  <div class="skills">
-                    <div class="sec-head mb-80 wow fadeInUp">
-                      <div class="sub-title-icon d-flex align-items-center">
-                        <span class="mr-10"
-                          ><img src="assets/imgs/header/advandage.svg" alt=""
-                        /></span>
-                        <h6>My Skills</h6>
-                      </div>
-                      <h3>My Advantages</h3>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="item mb-30">
-                          <div class="d-flex align-items-center mb-30">
-                            <div class="mr-30">
-                              <div class="img icon-img-40">
-                                <img src="assets/imgs/resume/s1.png" alt="" />
-                              </div>
-                            </div>
-                            <div>
-                              <h6 class="fz-18">Figma</h6>
-                            </div>
-                          </div>
-                          <div class="skill-progress">
-                            <span class="progres" data-value="95%"></span>
-                          </div>
-                          <span class="value">95%</span>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="item mb-30">
-                          <div class="d-flex align-items-center mb-30">
-                            <div class="mr-30">
-                              <div class="img icon-img-40">
-                                <img
-                                  src="assets/imgs/resume/xd.svg"
-                                  alt=""
-                                  width="100%"
-                                />
-                              </div>
-                            </div>
-                            <div>
-                              <h6 class="fz-18">Adobe XD</h6>
-                            </div>
-                          </div>
-                          <div class="skill-progress">
-                            <span class="progres" data-value="90%"></span>
-                          </div>
-                          <span class="value">90%</span>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="item mb-30">
-                          <div class="d-flex align-items-center mb-30">
-                            <div class="mr-30">
-                              <div class="img icon-img-40">
-                                <img src="assets/imgs/resume/s5.png" alt="" />
-                              </div>
-                            </div>
-                            <div>
-                              <h6 class="fz-18">Sketch</h6>
-                            </div>
-                          </div>
-                          <div class="skill-progress">
-                            <span class="progres" data-value="90%"></span>
-                          </div>
-                          <span class="value">70%</span>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="item sm-mb30">
-                          <div class="d-flex align-items-center mb-30">
-                            <div class="mr-30">
-                              <div class="img icon-img-40">
-                                <img src="assets/imgs/resume/s2.png" alt="" />
-                              </div>
-                            </div>
-                            <div>
-                              <h6 class="fz-18">HTML & CSS</h6>
-                            </div>
-                          </div>
-                          <div class="skill-progress">
-                            <span class="progres" data-value="85%"></span>
-                          </div>
-                          <span class="value">85%</span>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="item">
-                          <div class="d-flex align-items-center mb-30">
-                            <div class="mr-30">
-                              <div class="img icon-img-40">
-                                <img
-                                  src="assets/imgs/resume/bootsrap.png"
-                                  alt=""
-                                  width="100%"
-                                />
-                              </div>
-                            </div>
-                            <div>
-                              <h6 class="fz-18">Bootstrap</h6>
-                            </div>
-                          </div>
-                          <div class="skill-progress">
-                            <span class="progres" data-value="80%"></span>
-                          </div>
-                          <span class="value">65%</span>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="item">
-                          <div class="d-flex align-items-center mb-30">
-                            <div class="mr-30">
-                              <div class="img icon-img-40">
-                                <img src="assets/imgs/resume/s3.png" alt="" />
-                              </div>
-                            </div>
-                            <div>
-                              <h6 class="fz-18">Adobe Suite</h6>
-                            </div>
-                          </div>
-                          <div class="skill-progress">
-                            <span class="progres" data-value="80%"></span>
-                          </div>
-                          <span class="value">70%</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- ==================== End Skills ==================== -->
-                </div>
-              </div>
 
 
 
